@@ -3,13 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- First Mobile Viewport  -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <!-- title -->
+  <title>COVID Tracker Vanilla JS</title>
+  <!-- the Main CSS File -->
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <div class="navigation"></div>
-  <div class="map"></div>
+  <div class="map">
+    <div id="map"></div>
+  </div>
   <div class="data-info"></div>
 
+  <!-- Main JavaScript File -->
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <script src="https://maps.googleapis.com/maps/api/js?key="
+    AIzaSyBipOpsqAM6HsHfGWLbvkWgHXbcKuBJRHE"&callback=initMap&libraries=&v=weekly" async></script>
+
+  <script src="script.js"></script>
 </body>
 </html>

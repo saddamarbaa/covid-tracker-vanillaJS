@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.navigation {
+  height: 60px;
+  background-color: aqua;
+}
+
+#map {
+  height: 100%;
+  background-color: darkgreen;
+}
+
+.map {
+  height: 300px;
+  background-color: bisque;
+}
+
+.data-info {
+  height: 60px;
+  background-color: chocolate;
+}
