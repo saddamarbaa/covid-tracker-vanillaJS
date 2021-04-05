@@ -124,7 +124,6 @@ body {
 	background-color: var(--main-color);
 	color: var(--white, white);
 	padding: var(--space16, 16px);
-	padding: 10px var(--space16, 16px);
 	font-size: var(--space20);
 	text-decoration: none;
 	cursor: pointer;
@@ -163,6 +162,31 @@ body {
 }
 /********** End Header Section **********/
 
+/********** Start Landing Section **********/
+.Landing {
+	padding-top: var(--space40);
+	padding-bottom: var(--space40);
+	background-color: #f2f7fa;
+}
+
+.Landing .Landing-wraper {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+	grid-template-rows: 500px;
+	grid-gap: var(--space20);
+}
+
+.Landing .Landing-wraper .Landing-wraper-image img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
+}
+
+.Landing .Landing-wraper .Landing-wraper-content {
+	display: grid;
+	align-content: center;
+}
+
 /********** Start Footer Section  **********/
 .footer {
 	padding-top: var(--space40);
@@ -187,6 +211,39 @@ body {
 }
 /********** End Footer Section **********/
 
+.Landing .Landing-wraper .Landing-wraper-content h1 {
+	margin: 0;
+}
+
+.Landing .Landing-wraper .Landing-wraper-content p {
+	padding-top: var(--space16);
+	padding-bottom: var(--space16);
+	color: #777;
+	line-height: var(--line-height-space);
+	font-size: var(--space20);
+}
+
+@media (max-width: 576px) {
+	.Landing .Landing-wraper {
+		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	}
+
+	.Landing .Landing-wraper .Landing-wraper-content {
+		align-content: flex-start;
+		margin-top: -80px !important;
+	}
+}
+
+@media (max-width: 380px) {
+	.Landing .Landing-wraper {
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	}
+
+	.Landing .Landing-wraper .Landing-wraper-content {
+		margin-top: -100px !important;
+	}
+}
+/********** End Landing Section **********/
 /********** Start components **********/
 
 /********** End components **********/
