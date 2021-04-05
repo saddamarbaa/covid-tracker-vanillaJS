@@ -161,8 +161,31 @@ body {
 		grid-gap: 2px;
 	}
 }
-
 /********** End Header Section **********/
+
+/********** Start Footer Section  **********/
+.footer {
+	padding-top: var(--space40);
+	padding-bottom: var(--space40);
+	background-color: var(--main-color);
+	color: var(--white);
+}
+
+.footer .footer-wraper {
+	display: grid;
+	align-content: center;
+	justify-content: center;
+}
+
+.footer .footer-wraper a {
+	color: var(--white);
+	text-decoration: none;
+}
+
+.footer .footer-wraper .fa-heart {
+	color: red;
+}
+/********** End Footer Section **********/
 
 /********** Start components **********/
 
