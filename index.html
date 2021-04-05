@@ -1,27 +1,57 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- First Mobile Viewport  -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- title -->
-  <title>COVID Tracker Vanilla JS</title>
-  <!-- the Main CSS File -->
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <div class="navigation"></div>
-  <div class="map">
-    <div id="map"></div>
-  </div>
-  <div class="data-info"></div>
+	<head>
+		<!-- meta tag -->
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <!-- Main JavaScript File -->
-  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-  <script src="https://maps.googleapis.com/maps/api/js?key="
-    AIzaSyBipOpsqAM6HsHfGWLbvkWgHXbcKuBJRHE"&callback=initMap&libraries=&v=weekly" async></script>
+		<!-- First Mobile Viewport  -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <script src="script.js"></script>
-</body>
+		<!-- Google Web Fonts link  -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Normalize.css to makes browsers render all elements more consistently and in line with modern standards.  -->
+		<link rel="stylesheet" href="./css/normalize.css" />
+
+		<!-- font Awesome Library  -->
+		<link rel="stylesheet" href="./css/all.min.css" />
+
+		<!-- Main css file  -->
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<!-- Main Js file  -->
+		<script src="./js/main.js" defer></script>
+
+		<!-- title -->
+		<title>Léon Agency Template</title>
+	</head>
+	<body>
+		<!-- Start Header Section -->
+		<div class="header">
+			<div class="container">
+				<div class="header-nav">
+					<div class="header-right-nav">
+						<div class="logo"><a>saddam</a></div>
+					</div>
+					<div class="header-left-nav">
+						<div class="link">
+							<a class="active" href="#home">Home</a>
+						</div>
+						<div class="link"><a href="#">About</a></div>
+						<div class="link"><a href="#about">Project</a></div>
+						<div class="link"><a href="#Contact">Contact</a></div>
+						<div class="link"><a href="#blog">Blog</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Header Section -->
+	</body>
 </html>
