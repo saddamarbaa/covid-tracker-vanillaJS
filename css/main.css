@@ -88,11 +88,15 @@ body {
 	padding-top: var(--space40);
 	padding-bottom: var(--space40);
 	text-transform: uppercase;
+	position: sticky;
+	/* top: 0;
+	padding: 1.5rem 2rem; */
 }
 
 .header .header-nav {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	flex-wrap: wrap;
 }
 
@@ -255,6 +259,80 @@ body {
 }
 /********** End project Section **********/
 
+/********** Start Contact Section **********/
+.contact {
+	padding-top: var(--space50);
+	padding-bottom: var(--space50);
+	background-color: var(--section-background);
+}
+
+.contact .info {
+	padding-top: var(--space50);
+	padding-bottom: var(--space50);
+	text-align: center;
+}
+
+.contact .info .label {
+	font-size: var(--space30);
+	font-weight: 800;
+	color: var(--main-color);
+	letter-spacing: -1px;
+	margin-bottom: var(--space16);
+}
+
+.contact .info .link {
+	display: block;
+	font-size: var(--space30);
+	color: var(--secondary-color);
+	font-weight: 800;
+	text-decoration: none;
+	margin-bottom: var(--space16);
+}
+
+.contact .info .short-info {
+	padding-top: var(--space16);
+	padding-bottom: var(--space16);
+	color: #777;
+	line-height: var(--line-height-space);
+	font-size: var(--space20);
+	font-weight: 300;
+}
+
+.contact .info .social {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	font-size: var(--space20);
+}
+
+.contact .info .social i {
+	margin-left: var(--space20);
+	color: var(--main-color);
+	transition: var(--transition-duration);
+	-webkit-transition: var(--transition-duration);
+	-moz-transition: var(--transition-duration);
+	-ms-transition: var(--transition-duration);
+	-o-transition: var(--transition-duration);
+	cursor: pointer;
+	font-size: var(--space25);
+}
+
+.contact .info .social i:hover {
+	color: var(--secondary-color);
+}
+
+@media (max-width: 576px) {
+	.contact .info .label {
+		font-size: var(--space25);
+	}
+
+	.contact .info .link {
+		font-size: var(--space25);
+	}
+}
+
+/********** End Contact Section **********/
+
 /********** Start Footer Section  **********/
 .footer {
 	padding-top: var(--space50);
@@ -277,7 +355,65 @@ body {
 .footer .footer-wraper .fa-heart {
 	color: red;
 }
+
+@media (max-width: 380px) {
+	.footer {
+		padding-top: var(--space70);
+		padding-bottom: var(--space70);
+		background-color: var(--main-color);
+		color: var(--white);
+	}
+}
+
 /********** End Footer Section **********/
+
+/********** Start Scroll Top **********/
+.back-to-top {
+	cursor: pointer;
+	position: fixed;
+	bottom: 35px;
+	right: 5px;
+	width: var(--space40);
+	height: var(--space40);
+	background: var(--main-color);
+	border-radius: var(--space50);
+	-webkit-border-radius: var(--space50);
+	-moz-border-radius: var(--space50);
+	-ms-border-radius: var(--space50);
+	-o-border-radius: var(--space50);
+	border: 0;
+	outline: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.back-to-top i {
+	background: var(--secondary-color);
+	height: var(--space40);
+	width: var(--space40);
+	color: var(--white);
+	text-align: center;
+	line-height: 40px;
+	font-size: var(--space20);
+	border-radius: var(--space50);
+	-webkit-border-radius: var(--space50);
+	-moz-border-radius: var(--space50);
+	-ms-border-radius: var(--space50);
+	-o-border-radius: var(--space50);
+	transition: var(--transition-duration);
+	-webkit-transition: var(--transition-duration);
+	-moz-transition: var(--transition-duration);
+	-ms-transition: var(--transition-duration);
+	-o-transition: var(--transition-duration);
+}
+
+@media (max-width: 380px) {
+	.back-to-top {
+		bottom: var(--space100);
+	}
+}
+/********** End Scroll Top **********/
 
 /********** Start components **********/
 
