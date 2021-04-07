@@ -15,9 +15,10 @@
 :root {
 	--main-color: #100f39;
 	--secondary-color: #8483e0;
-	--section-background: #faf9ff;
-	--white: white;
+	--section-background: #f2f7fa;
+	--white: #fff;
 	--black: #000;
+	--grey7: #777;
 	--space16: 16px;
 	--space20: 20px;
 	--space25: 25px;
@@ -39,6 +40,11 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+}
+
+/* fix button outline border on hover */
+*:focus {
+	outline: 0 !important;
 }
 
 html {
@@ -75,7 +81,7 @@ body {
 }
 
 /* Apply styles starting from X-Large devices (large desktops, 1200px ) and up to XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
 	.container {
 		width: 1170px;
 	}
@@ -85,12 +91,9 @@ body {
 /********** Start Header Section **********/
 .header {
 	background-color: var(--section-background);
-	padding-top: var(--space40);
-	padding-bottom: var(--space40);
+	padding-top: var(--space20);
+	padding-bottom: var(--space30);
 	text-transform: uppercase;
-	position: sticky;
-	/* top: 0;
-	padding: 1.5rem 2rem; */
 }
 
 .header .header-nav {
@@ -158,6 +161,26 @@ body {
 	}
 }
 
+@media (min-width: 768px) {
+	.header {
+		position: sticky;
+		top: 0;
+	}
+
+	.header .header-nav .link a {
+		color: var(--main-color);
+		background-color: transparent;
+	}
+	.header .header-nav .link a.active {
+		background-color: transparent;
+	}
+
+	.header .header-nav .link a:hover {
+		background-color: var(--secondary-color);
+		color: var(--white);
+	}
+}
+
 @media (max-width: 576px) {
 	.header .header-nav .header-left-nav {
 		grid-template-columns: 1fr;
@@ -170,7 +193,7 @@ body {
 .Landing {
 	padding-top: var(--space50);
 	padding-bottom: var(--space50);
-	background-color: #f2f7fa;
+	background-color: var(--section-background);
 }
 
 .Landing .Landing-wraper {
@@ -198,7 +221,7 @@ body {
 .Landing .Landing-wraper .Landing-wraper-content p {
 	padding-top: var(--space16);
 	padding-bottom: var(--space16);
-	color: #777;
+	color: var(--grey7);
 	line-height: var(--line-height-space);
 	font-size: var(--space20);
 }
@@ -252,7 +275,7 @@ body {
 .project .project-wraper .card p {
 	padding-top: var(--space16);
 	padding-bottom: var(--space16);
-	color: #777;
+	color: var(--grey7);
 	line-height: var(--line-height-space);
 	font-size: var(--space20);
 	font-weight: 300;
@@ -263,7 +286,6 @@ body {
 .contact {
 	padding-top: var(--space50);
 	padding-bottom: var(--space50);
-	background-color: var(--section-background);
 }
 
 .contact .info {
@@ -292,7 +314,7 @@ body {
 .contact .info .short-info {
 	padding-top: var(--space16);
 	padding-bottom: var(--space16);
-	color: #777;
+	color: var(--grey7);
 	line-height: var(--line-height-space);
 	font-size: var(--space20);
 	font-weight: 300;
