@@ -1,0 +1,95 @@
+/** @format */
+.login {
+	background-color: var(--section-background);
+	width: 100vw;
+	min-height: 90vh;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	font-size: var(--space20);
+	margin-bottom: 20px;
+}
+
+.login .login-wraper {
+	background-color: var(--section-background);
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	grid-template-columns: 400px;
+	grid-template-rows: 520px;
+}
+
+@media (max-width: 380px) {
+	.login .login-wraper {
+		grid-template-columns: 280px;
+	}
+
+	.container {
+		width: 280px;
+	}
+}
+
+.login-inner-wraper {
+	border: 1px solid var(--main-color);
+	padding: var(--space25);
+	color: var(--white);
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.login-inner-wraper div:first-child {
+	background-color: var(--main-color);
+	transition: 0.4s;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-ms-transition: 0.4s;
+	-o-transition: 0.4s;
+	padding: 10px;
+}
+
+.login-inner-wraper .user-name {
+	margin-top: var(--space20);
+}
+
+.login-inner-wraper input[type="text"],
+.login-inner-wraper input[type="password"] {
+	width: 100%;
+	color: var(--main-color);
+	padding: var(--space16);
+}
+
+.login-inner-wraper input {
+	margin-bottom: var(--space20);
+	transition: 0.4s;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-ms-transition: 0.4s;
+	-o-transition: 0.4s;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+}
+
+.login-inner-wraper .buttons {
+	display: grid;
+}
+
+.login-inner-wraper input[type="button"],
+.login-inner-wraper input[type="reset"] {
+	background-color: var(--main-color);
+	color: var(--white);
+	padding: 16px;
+	font-size: var(--space20);
+	cursor: pointer;
+}
+
+.login-inner-wraper input[type="button"]:hover,
+.login-inner-wraper input[type="reset"]:hover {
+	background-color: var(--secondary-color);
+}
+
